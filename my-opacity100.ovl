@@ -1,0 +1,310 @@
+[Master]
+Implementation=2
+FontFace=Consolas
+FontHeight=-8
+FontWeight=700
+ZoomRatio=2
+[Settings]
+Name=
+EnvVars=
+RefreshPeriod=500
+LockUserSettings=1
+EmbeddedImage=
+PingAddr=223.5.5.5
+[General]
+Sources=11
+Tables=0
+Layers=23
+[Source0]
+Name=CPU temperature
+Units=°C
+Format=
+Formula=
+Provider=HAL
+ID=CPU temperature
+[Source1]
+Name=CPU power
+Units=W
+Format=
+Formula=
+Provider=HAL
+ID=CPU power
+[Source2]
+Name=CPU usage
+Units=%
+Format=
+Formula=
+Provider=HAL
+ID=CPU usage
+[Source3]
+Name=RAM usage
+Units=GB
+Format=%.1f
+Formula=x / 1024
+Provider=HAL
+ID=RAM usage
+[Source4]
+Name=GPU1 temperature
+Units=°C
+Format=
+Formula=
+Provider=HAL
+ID=GPU1 temperature
+[Source5]
+Name=GPU1 usage
+Units=%
+Format=
+Formula=
+Provider=HAL
+ID=GPU1 usage
+[Source6]
+Name=GPU1 power
+Units=W
+Format=
+Formula=
+Provider=HAL
+ID=GPU1 power
+[Source7]
+Name=GPU1 memory usage
+Units=GB
+Format=%.1f
+Formula=x / 1024
+Provider=HAL
+ID=GPU1 memory usage
+[Source8]
+Name=GPU1 total memory
+Units=GB
+Format=%.0f
+Formula=x / 1024
+Provider=HAL
+ID=GPU1 total memory
+[Source9]
+Name=Total RAM
+Units=GB
+Format=%.0f
+Formula=x / 1024
+Provider=HAL
+ID=Total RAM
+[Source10]
+Name=Ping
+Units=ms
+Format=
+Formula=validate(x) ? x : 999
+Provider=HAL
+ID=Ping
+[Layer0]
+Name=CPU usage graph fill
+Text=<G=CPU usage,0,0,1,0,100,81>
+PositionX=0
+PositionY=-4
+ExtentX=-18
+ExtentY=-2
+ExtentOrigin=0
+TextColor=244F6B88
+[Layer1]
+Name=CPU usage graph line
+Text=<G=CPU usage,0,0,1,0,100,80>
+PositionX=0
+PositionY=-4
+ExtentX=-18
+ExtentY=-2
+ExtentOrigin=0
+TextColor=8060CDFF
+[Layer2]
+Name=GPU usage graph fill
+Text=<G=GPU1 usage,0,0,1,0,100,81>
+PositionX=0
+PositionY=-6
+ExtentX=-18
+ExtentY=-2
+ExtentOrigin=0
+TextColor=244F6B88
+[Layer3]
+Name=GPU usage graph line
+Text=<G=GPU1 usage,0,0,1,0,100,80>
+PositionX=0
+PositionY=-6
+ExtentX=-18
+ExtentY=-2
+ExtentOrigin=0
+TextColor=8060CDFF
+[Layer4]
+Name=Frametime graph
+Text=<G=Frametime,0,0,1,0,100,0>
+PositionX=0
+PositionY=-2
+ExtentX=-18
+ExtentY=-2
+ExtentOrigin=0
+TextColor=A060CDFF
+[Layer5]
+Name=Process name
+Text=<EXE>
+PositionX=0
+PositionY=0
+ExtentX=-18
+ExtentY=-1
+ExtentOrigin=3
+TextColor=F3F3F3
+[Layer6]
+Name=Ping RTT
+Text=RTT<S=-25> <S>%Ping%
+PositionX=-12
+PositionY=-1
+ExtentX=-6
+ExtentY=-1
+ExtentOrigin=5
+Size=75
+TextColor=8FBED6,,999,FF6B6B,999,(Ping,0)
+[Layer7]
+Name=API
+Text=<APP>
+PositionX=0
+PositionY=-1
+ExtentX=-5
+ExtentY=-1
+ExtentOrigin=3
+Size=75
+TextColor=B8C7D9
+[Layer8]
+Name=FPS label
+Text=FPS
+PositionX=0
+PositionY=-2
+ExtentX=-3
+ExtentY=-1
+ExtentOrigin=3
+Size=75
+TextColor=9EA7B3
+[Layer9]
+Name=Framerate value
+Text=<FR>
+PositionX=-2
+PositionY=-2
+ExtentX=-6
+ExtentY=-1
+ExtentOrigin=2
+Size=150
+TextColor=FFFFFF
+[Layer10]
+Name=Frametime
+Text=<FT><S=-25> <S=-75>ms<S>
+PositionX=-8
+PositionY=-2
+ExtentX=-10
+ExtentY=-1
+ExtentOrigin=2
+TextColor=60CDFF
+[Layer11]
+Name=Framerate 1% low
+Text=<FR10L><S=-25> <S=-50>1%L<S>
+PositionX=-8
+PositionY=-3
+ExtentX=-10
+ExtentY=-1
+ExtentOrigin=2
+TextColor=60CDFF
+[Layer12]
+Name=CPU label
+Text=CPU
+PositionX=0
+PositionY=-4
+ExtentX=-3
+ExtentY=-1
+ExtentOrigin=3
+Size=75
+TextColor=F3F3F3
+[Layer13]
+Name=RAM usage
+Text=%RAM usage%<S=-25> <S=-75>/%Total RAM%<S=-25> <S=-75>GB<S>
+PositionX=-8
+PositionY=-4
+ExtentX=-10
+ExtentY=-1
+ExtentOrigin=2
+TextColor=FFFFFF
+[Layer14]
+Name=CPU usage
+Text=%CPU usage%<S=-25> <S=-75>%<S>
+PositionX=-2
+PositionY=-4
+ExtentX=-6
+ExtentY=-1
+ExtentOrigin=2
+Size=150
+TextColor=D6DEE8
+[Layer15]
+Name=CPU temperature
+Text=%CPU temperature%<S=-25> <S=-75>°C<S>
+PositionX=-13
+PositionY=-5
+ExtentX=-5
+ExtentY=-1
+ExtentOrigin=2
+TextColor=D6DEE8
+[Layer16]
+Name=CPU power
+Text=%CPU power%<S=-25> <S=-75>W<S>
+PositionX=-8
+PositionY=-5
+ExtentX=-5
+ExtentY=-1
+ExtentOrigin=2
+TextColor=D6DEE8
+[Layer17]
+Name=GPU label
+Text=GPU
+PositionX=0
+PositionY=-6
+ExtentX=-3
+ExtentY=-1
+ExtentOrigin=3
+Size=75
+TextColor=F3F3F3
+[Layer18]
+Name=VRAM usage
+Text=%GPU1 memory usage%<S=-25> <S=-75>/%GPU1 total memory%<S=-25> <S=-75>GB<S>
+PositionX=-8
+PositionY=-6
+ExtentX=-10
+ExtentY=-1
+ExtentOrigin=2
+TextColor=FFFFFF
+[Layer19]
+Name=GPU usage
+Text=%GPU1 usage%<S=-25> <S=-75>%<S>
+PositionX=-2
+PositionY=-6
+ExtentX=-6
+ExtentY=-1
+ExtentOrigin=2
+Size=150
+TextColor=D6DEE8
+[Layer20]
+Name=GPU temperature
+Text=%GPU1 temperature%<S=-25> <S=-75>°C<S>
+PositionX=-13
+PositionY=-7
+ExtentX=-5
+ExtentY=-1
+ExtentOrigin=2
+TextColor=D6DEE8
+[Layer21]
+Name=GPU power
+Text=%GPU1 power%<S=-25> <S=-75>W<S>
+PositionX=-8
+PositionY=-7
+ExtentX=-5
+ExtentY=-1
+ExtentOrigin=2
+TextColor=D6DEE8
+[Layer22]
+Name=Resolution
+Text=<RES>
+PositionX=-5
+PositionY=-1
+ExtentX=-7
+ExtentY=-1
+ExtentOrigin=4
+Size=75
+TextColor=B8C7D9

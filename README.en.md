@@ -6,9 +6,19 @@ Chinese version: [README.md](README.md)
 
 ## Examples
 
+`my.ovl` (HDR)
+
 ![Genshin Impact example](docs/images/example-my-yuanshen.png)
 
 ![Euro Truck Simulator 2 example](docs/images/example-my-eurotrucks2.png)
+
+`my.ovl` (SDR)
+
+![SDR example](docs/images/example-my-sdr.png)
+
+`my-opacity100.ovl` (HDR)
+
+![Opaque version example](docs/images/example-my-opacity100.png)
 
 ## Notes
 
@@ -20,7 +30,7 @@ Chinese version: [README.md](README.md)
 
 ## Usage
 
-You can directly use `my.ovl` or `my-size10-opacity75.ovl`.
+You can directly use `my.ovl`, `my-size10-opacity75.ovl`, or `my-opacity100.ovl`.
 
 If you want to change the size or opacity, regenerate the layout:
 
@@ -46,6 +56,9 @@ To sync those edits back to the template, it is recommended to use a coding agen
 
 - `my-size10-opacity75.ovl`
   A slightly larger generated layout with `Size=10` and `Opacity=75`, ready to use.
+
+- `my-opacity100.ovl`
+  An opaque generated layout with the default `Size=8` and `Opacity=100`, ready to use.
 
 - `my.template.ovl`
   Template file containing `{{...}}` placeholders.
